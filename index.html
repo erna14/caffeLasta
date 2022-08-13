@@ -1,0 +1,1028 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Caffe Lasta</title>
+	
+	<link rel="icon" type="image/png" href="images/coffee-cup.png">
+	
+	<!-- LINKS FOR THE FONT-->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Leckerli+One&display=swap" rel="stylesheet">
+
+	<!-- INSTAGRAM ICON -->	
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<!-- PHONE AND MAPS ICON -->
+	<meta name='viewport' content='width=device-width, initial-scale=1'>
+	<script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+
+	<!-- MORE LINKS :)-->
+	<script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">	
+
+</head>
+
+<!-- CSS CODE -->
+<style>
+*{
+	margin: 0;
+	padding: 0;
+}
+/* HOME PAGE */
+.home{
+	background-image: url("images/chocolate-icecream.png"), url("images/latte.png"), url("images/coffee-cup.png");
+	background-size: 160px, 180px, 45px;
+	background-repeat: no-repeat, no-repeat, no-repeat;
+	background-position: 13% 70%, 89% 70%, 2.5% 0%;
+}
+
+.custom-shape-divider-bottom-1637929318 {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	overflow: hidden;
+	line-height: 0;
+}
+
+.custom-shape-divider-bottom-1637929318 svg {
+	position: relative;
+	display: block;
+	width: calc(100% + 1.3px);
+	height: 130px;
+	
+}
+
+.custom-shape-divider-bottom-1637929318 .shape-fill {
+	fill: #FFFFFF;
+}
+
+/* NAVIGATION BAR */
+h1{
+	color: white;
+	display: inline-block;
+	margin-top: 7px;
+	margin-left: 90px;
+	font-family: 'Leckerli One', cursive;
+}
+
+p.navigation{
+	float: right;
+	font-size: 20px;
+	font-family: 'Leckerli One', cursive;
+	margin-right: 50px;
+	letter-spacing: 3px;
+	word-spacing: 5px;
+	margin-top: 6px;
+}
+
+/* CHOCOALTE BUTTONS */
+button.chocolate{
+	outline:none;
+	cursor:pointer;
+	display:inline-block;
+	background-color:#54341A;
+	text-shadow:0px 1px 0px rgba(255,255,255,0.1);
+	text-decoration:none;
+	font-family: 'Leckerli One', cursive;
+	color: rgb(189, 116, 83);
+	width: auto;
+	text-align:center;
+	margin:2px;
+	padding:0px 13px;
+	line-height:40px;
+	border-top:9px solid #6A4021;
+	border-right:10px solid #39210D;
+	border-bottom:10px solid #241505;
+	border-left:10px solid #402712;
+	-webkit-box-shadow:inset 0px 1px 0px rgba(255,255,255,0.15),
+		0px 1px 2px black;
+	-moz-box-shadow:inset 0px 1px 0px rgba(255,255,255,0.15),
+		0px 1px 2px black;
+	box-shadow:inset 0px 1px 0px rgba(255,255,255,0.15),
+		0px 1px 2px black;
+	margin-bottom: 10px;
+}
+
+button.chocolate:hover {
+	background-color:#4B2E17;
+	border-color:#5F391F #311F0D #170D03 #341F0F;
+}
+
+button.chocolate:active {
+	border-color:#170D03 #341F0F #5F391F #311F0D;
+	-webkit-box-shadow:none;
+	-moz-box-shadow:none;
+	box-shadow:none;
+}
+
+/*SCROLL TO TOP BUTTON*/
+button.buttonScrollToTop{
+	position: fixed;
+	right: 20px;
+	bottom: 20px;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+	border: none;
+	outline: none;
+	cursor: pointer;
+}
+
+/* INSPIRATIONAL QUOTES */
+div.inspo{
+	margin-top: 70px;
+	color: white;
+	font-size: 300px;
+}
+
+h2.inspo1{
+	display: inline-block;
+	font-family: 'Leckerli One', cursive;
+}
+
+p.inspo2{
+	color: rgb(185, 55, 94);
+	text-align: center;
+	font-family: 'Leckerli One', cursive;
+	font-size: 20px;
+	margin-top: 20px;
+}
+
+h2{
+	text-align: center;
+	font-family: 'Leckerli One', cursive;
+	font-size: 40px;
+}
+
+
+/* ABOUT US */
+div.aboutUs{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-image: url("images/ice-cream1.png"), url("images/ice-cream2.png"), url("images/coffee-beans.png"), 
+                      url("images/coffee-beans.png"), url("images/coffee-beans.png"), url("images/coffee-beans.png");
+	background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
+	background-size: 240px, 270px, 110px, 110px, 110px, 110px;
+	background-position: 3% 50%, 97% 50%, 4% 0%, 85% 100%, 17% 100%, 97% 3%;
+}
+
+.blog-card{
+	position: absolute;
+	height: 370px;
+	width: 95%;
+	max-width: 850px;
+	margin-left: auto;
+	margin-bottom: auto;
+	margin-right: auto;
+	background-color: rgb(243, 180, 190);
+	border-radius: 25px;
+	box-shadow: 0 0 35px rgba(0, 0, 0, 0.12);
+	font-family: Arial, Helvetica, sans-serif;
+	color: rgb(68, 47, 64);
+}
+
+.blog-card .inner-part{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 0 25px;
+	height: 360px;
+	position: absolute;
+}
+
+.inner-part .img{
+	height: 260px;
+	width: 260px;
+	overflow: hidden;
+	flex-shrink: 0;
+	border-radius: 20px;
+	box-shadow: 0 0 35px rgba(0, 0, 0, 0.05);
+	margin-left: 20px;
+}
+
+.img img{
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+	cursor: pointer;
+	opacity: 0;
+	transition: .6s;
+}
+
+#tap-1:checked ~ .inner-part .img1,
+#tap-2:checked ~ .inner-part .img2,
+#tap-3:checked ~ .inner-part .img3{
+	opacity: 1;
+	transition-delay: .2s;
+}
+
+.content2{
+	padding: 0 20px 0 35px;
+	width: 530px;
+	margin-left: 50px;
+	opacity: 0;
+	transition: .6s;
+	
+}
+
+#tap-1:checked ~ .inner-part .cont1,
+#tap-2:checked ~ .inner-part .cont2,
+#tap-3:checked ~ .inner-part .cont3{
+	opacity: 1;
+	margin-left: 0px;
+	z-index: 100;
+	transition-delay: .3s;
+}
+
+.content2 span{
+	display: block;
+	margin-bottom: 15px;
+	font-size: 22px;
+	font-weight: bold;
+}
+
+.content2 .title{
+	font-size: 30px;
+	font-weight: 700;
+	margin-bottom: 20px;
+}
+
+.content2 .text{
+	font-size: 19px;
+	margin-bottom: 30px;
+	line-height: 1.5em;
+	text-align: justify;
+}
+
+.sliders{
+	position: absolute;
+	bottom: 25px;
+	left: 65%;
+	z-index: 100;
+	transform: translateX(-50%);
+}
+
+.sliders .tap{
+	position: relative;
+	height: 10px;
+	width: 50px;
+	background-color: white;
+	border-radius: 5px;
+	display: inline-flex; 
+	margin: 0 3px;
+	cursor: pointer;
+}
+
+.sliders .tap::before{
+	position: absolute;
+	content: '';
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	background-color: rgb(180, 69, 102);
+	border-radius: 10px;
+	transform: scaleX(0);
+	transition: .6s;
+	transform-origin: left;
+}
+
+#tap-1:checked ~ .sliders .tap-1::before,
+#tap-2:checked ~ .sliders .tap-2::before,
+#tap-3:checked ~ .sliders .tap-3::before{
+	transform: scaleX(1);
+	width: 100%;
+}
+
+input{
+	display: none;
+}
+
+
+/* MENU */
+h2.menu{
+	margin-top: 45px;
+	color: rgb(101, 63, 77);
+}
+
+img.menu1{
+	display: inline-block;
+	margin-left: 5px;
+	margin-bottom: 50px;
+	width: 750px;
+}
+
+img.menu2{
+	display: inline-block;
+	margin-bottom: 40px;
+	width: 745px;
+}
+
+.custom-shape-divider-top-1638037189 {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	overflow: hidden;
+	line-height: 0;
+}
+
+.custom-shape-divider-top-1638037189 svg {
+	position: relative;
+	display: block;
+	width: calc(100% + 1.3px);
+	height: 93px;
+}
+
+.custom-shape-divider-top-1638037189 .shape-fill {
+	fill: rgb(245, 217, 221);
+}
+
+/* CONTACT US PAGE */
+div.contact{
+	display: flex;
+	color: rgb(255, 240, 245);
+}
+
+div.verticalLine{
+	border-left: 1px solid rgb(255, 240, 245);;
+	height: 100px;
+	margin-left: 80px;
+	margin-right: 80px;
+}
+
+div.contactInfo{
+	margin-top: 40px;
+	display: flex;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+div.workHours{
+	margin-left: 310px;
+}
+h3.workHours{
+	margin-top: 10px;
+}
+div.work{
+	margin-top: 23px;
+}
+
+h3.contInfo{
+	margin-top: 10px;
+}
+
+div.igTel{
+	margin-top: 10px;
+	line-height: 1.5;
+	text-align: center;
+}
+h3.location{
+	margin-top: 10px;
+}
+div.loc{
+	margin-top: 20px;
+}
+
+.fa {
+	font-size: 20px;
+	width: 50px;
+	text-align: center;
+	text-decoration: none;
+}
+.fa-instagram {
+	background: rgb(101, 63, 77);
+	padding: none;
+	width: 23px;
+	color: white;
+}
+
+a.insta:link, a.insta:hover, a.insta:active, a.insta:visited{
+	color: rgb(255, 240, 245);
+	text-decoration: none;
+}
+
+.custom-shape-divider-top-1638060068 {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	overflow: hidden;
+	line-height: 0;
+	transform: rotate(180deg);
+}
+
+.custom-shape-divider-top-1638060068 svg {
+	position: relative;
+	display: block;
+	width: calc(100% + 1.3px);
+	height: 25px;
+}
+
+.custom-shape-divider-top-1638060068 .shape-fill {
+	fill: rgb(255, 235, 242);
+}
+
+
+/* MODAL */
+/* Full-width input fields */
+input[type=text]{
+	width: 90%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	display: inline-block;
+	border: 2px solid rgb(136, 45, 72);
+	box-sizing: border-box;
+	border-radius: 50px;
+	color: rgb(136, 45, 72);
+	font-family: Arial, Helvetica, sans-serif;
+
+}
+
+textarea{
+	height: 125px;
+	width: 90%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	display: inline-block;
+	border: 2px solid rgb(136, 45, 72);
+	box-sizing: border-box;
+	border-radius: 25px;
+	resize: none;
+	color: rgb(136, 45, 72);
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Set a style for all buttons */
+button.send {
+	background-color: rgb(136, 45, 72);
+	color: white;
+	padding: 14px 20px;
+	margin: 8px 0;
+	border: none;
+	cursor: pointer;
+	width: 30%;
+	border-radius: 50px;
+	margin-bottom: 30px;
+}
+
+button.send:hover {
+	opacity: 0.8;
+}
+
+/* Center the image and position the close button */
+.imgcontainer {
+	text-align: center;
+	margin: 24px 0 12px 0;
+	position: relative;
+}
+
+img.avatar {
+	width: 22%;
+}
+
+.container {
+	padding: 10px;
+}
+
+span.email {
+	float: right;
+	padding-top: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+	display: none;
+	position: fixed;
+	z-index: 1; 
+	left: 0;
+	top: 0;
+	width: 100%; 
+	height: 100%; 
+	overflow: auto; 
+	background-color: rgb(0,0,0); 
+	background-color: rgba(0,0,0,0.4); 
+	padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+	background-color: #fefefe;
+	margin: 5% auto 15% auto; 
+	border: 1px solid #888;
+	width: 30%; 
+	height: 60%;
+	border-radius: 20px;
+	color: rgb(136, 45, 72);
+}
+
+/* The Close Button (x) */
+.close {
+	position: absolute;
+	right: 25px;
+	top: 0;
+	color: #000;
+	font-size: 35px;
+	font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+	color: red;
+	cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+	-webkit-animation: animatezoom 0.6s;
+	animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+	from {-webkit-transform: scale(0)} 
+	to {-webkit-transform: scale(1)}
+}
+  
+@keyframes animatezoom {
+	from {transform: scale(0)} 
+	to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+	span.psw {
+		display: block;
+		float: none;
+	}
+	.cancelbtn {
+		width: 100%;
+	}
+}
+
+
+/* OUR SERVICES */
+.container{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	display: flex;
+	justify-content: center;
+	color: white;
+	margin-top: 50px;
+	border-radius: 15px;
+}
+
+.container .box{
+	position: relative;
+	width: 330px;
+	height: 330px;
+	margin: 0 15px;
+	text-align: center;
+	overflow: hidden;
+	border-radius: 15px;
+	border: 15px solid white;
+}
+
+.container .box .img,
+.container .box .img2,
+.container .box .img3{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	background: url("images/caffeLastaIceCream1.jpg");
+	background-size: cover !important;
+	background-repeat: no-repeat !important;
+	background-position: 0 0 !important;
+	transition: 0.5s;
+}
+
+.container .box .img2{
+	background: url("images/caffeLastaIceCream2.jpg");
+}
+
+.container .box .img3{
+	background: url("images/caffeLastaIceCream3.jpg");
+}
+
+.container .box:hover .img,
+.container .box:hover .img2,
+.container .box:hover .img3{
+	background-position: 200% 0 !important;
+}
+
+.container .box .overlay{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.3);
+}
+
+.container .box .overlay2{
+	position: absolute;
+	top: 0;
+	left: -150%;
+	width: 120%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.7);
+	transform: skewX(-30deg);
+	transition: .5s;
+}
+
+.container .box:hover .overlay2{
+	left: -10%;
+}
+
+.container .box .text{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	width: 80%;
+	box-sizing: border-box;
+	padding: 25px;
+	z-index: 1000;
+	text-shadow: 5px 5px 10px black;
+}
+
+.container .box .text span:nth-child(1){
+	position: absolute;
+	top: 0;
+	left: -20px;
+	width: 0;
+	height: 1px;
+	background-color: white;
+	transform-origin: left;
+	transition: .7s ease-in-out;
+	transition-delay: .7s;
+}
+.container .box .text span:nth-child(2){
+	position: absolute;
+	top: -20px;
+	left: 0;
+	width: 1px;
+	height: 0;
+	background-color: white;
+	transform-origin: top;
+	transition: .7s ease-in-out;
+	transition-delay: .11s;
+}
+.container .box .text span:nth-child(3){
+	position: absolute;
+	bottom: 0;
+	right: -20px;
+	width: 0;
+	height: 1px;
+	background-color: white;
+	transform-origin: right;
+	transition: .7s ease-in-out;
+	transition-delay: .9s;
+}
+.container .box .text span:nth-child(4){
+	position: absolute;
+	bottom: -20px;
+	right: 0px;
+	width: 1px;
+	height: 0;
+	background-color: white;
+	transform-origin: left;
+	transition: .7s ease-in-out;
+	transition-delay: .1.3s;
+}
+
+.container .box:hover .text span:nth-child(1),
+.container .box:hover .text span:nth-child(3){
+	width: 115%;
+}
+
+.container .box:hover .text span:nth-child(2),
+.container .box:hover .text span:nth-child(4){
+	height: 120%;
+}
+
+.container .box .text h2{
+	position: relative;
+	color: white;
+	font-size: 1.5rem;
+	text-transform: uppercase;
+	margin-bottom: 0;
+	letter-spacing: 1px;
+	opacity: 0;
+	transition: .5s;
+	transition-timing-function: linear;
+	transform: translateY(-10px);
+}
+
+.container .box:hover .text h2{
+	transform: translateY(0);
+	opacity: 1;
+	transition-delay: 1.6s;
+}
+
+.container .box .text p{
+	line-height: 1.2;
+	opacity: 0;
+	transform: translateY(10px);
+	transition: .5s;
+	transition-timing-function: linear;
+}
+
+.container .box:hover .text p{
+	transform: translateY(0);
+	opacity: 1;
+	transition-delay: 1.7s;
+}
+
+.custom-shape-divider-top-1639910579 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-top-1639910579 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 109px;
+}
+
+.custom-shape-divider-top-1639910579 .shape-fill {
+    fill: #FFFFFF;
+}
+
+.modal2{
+	display: none; 
+	position: fixed; 
+	z-index: 1; 
+	left: 0;
+	top: 0;
+	width: 100%; 
+	height: 100%; 
+	overflow: auto; 
+	background-color: rgb(0,0,0); 
+	background-color: rgba(0,0,0,0.4); 
+	padding-top: 60px;
+}
+
+.modal-content2 {
+	background-color: #fefefe;
+	margin: 5% auto 15% auto; 
+	border: 1px solid #888;
+	width: 50%;
+	height: 75%;
+	border-radius: 20px;
+	color: rgb(136, 45, 72);
+}
+</style>
+
+<body>
+<!-- HOME -->	
+	<div style="position: relative; background-color: rgb(244, 172, 183); min-height: 80vh;" class="home">
+		
+		<div class="navbar">
+			<h1 class="logo">Caffe "Lasta"</h1>
+
+			<p class="navigation">
+				<a href="#aboutUs" class="aboutUs"><button class="chocolate">ABOUT</button></a>
+				<a href="#ourServices" class="ourServices"><button class="chocolate">OUR SERVICES</button></a>
+				<a href="#menu" class="menu"><button class="chocolate">MENU</button></a>
+				<button onclick="document.getElementById('id02').style.display='block'" class="chocolate">OUR LOCATION</button>
+				<button onclick="document.getElementById('id01').style.display='block'" class="chocolate">CONTACT US</button>
+			</p>
+
+		</div>
+
+		<p><br></p>
+
+		<div class="inspo">
+			<center><h2 style="font-size: 90px;"class="insto1">Life is Sweeter with Tradition</h2></center>
+		</div>
+
+		<p class="inspo2">
+			There is always time for coffee and sweets! Made with care and prepared with love,<br>our sweets are all you might need to make every day special!
+		</p>
+
+
+		<div class="custom-shape-divider-bottom-1637929318">
+   			<svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+       			<path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" class="shape-fill"></path>
+    		</svg>
+		</div>
+
+	</div>
+
+<!-- ABOUT US -->
+	<div style = "min-height: 80vh;" class="aboutUs">
+
+		<div style="margin-top: -500px;"><a name="aboutUs"><h2 style="color: rgb(180, 69, 102)" class="aboutUs">ABOUT US</h2></a></div>
+			
+		<div class="blog-card">
+			<input type="radio" name="select" id="tap-1" checked>
+			<input type="radio" name="select" id="tap-2">
+			<input type="radio" name="select" id="tap-3">
+			<div class="sliders">
+				<label for="tap-1" class="tap tap-1"></label>
+				<label for="tap-2" class="tap tap-2"></label>
+				<label for="tap-3" class="tap tap-3"></label>
+			</div>
+			<div class="inner-part">
+				<label for="" class="img">
+					<img class="img1" src="images/owner.jpg">
+				</label>
+				<div class="content2 cont1">
+					<div style="margin-top: 35px;" class="title">Family Owned Business</div>
+					<div style="margin-right: 70px;" class="text">A lovely family who decided to open their own traditional ice cream/coffee shop after the war, wants to make lovely memories and experiences for their customers.</div>
+				</div>
+			</div>
+			<div class="inner-part">
+				<label for="" class="img">
+					<img class="img2" src="images/caffeLastaIceCream1.jpg">
+				</label>
+				<div class="content2 cont2">
+					<div style="margin-top: 35px;" class="title">Secret Italian Recepie</div>
+					<div style="margin-right: 70px;" class="text">After traveling a lot after the war the most places they have visisted were cities in Italy. They made a lot of friends who are professional ice cream makers and shared with the Bašić family their secrete italian recepie.</div>
+				</div>
+			</div>
+			<div class="inner-part">
+				<label for="" class="img">
+					<img class="img3" src="images/caffeLastaKadaif.jpg">
+				</label>
+				<div class="content2 cont3">
+					<div style="margin-top: 35px;" class="title">TRADITION</div>
+					<div style="margin-right: 70px;" class="text">Besides italian recepies we provide turkish delicatesses that the Bašić ancestors have taught them</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+<!-- OUR SERVICES -->
+	<div style ="position: relative; background-color:rgb(245, 217, 221);  min-height: 80vh;" class="ourServices">
+		<br>
+		<a name="ourServices"><h2 style="margin-top: 50px; color:rgb(65, 45, 61)" class="ourServices">OUR SERVICES</h2></a>
+
+		<div class="container">
+			<div class="box">
+				<div class="img">
+					<div class="overlay"></div>
+					<div class="overlay2"></div>
+					<div class="text">
+						<span></span>
+						<span></span>
+						<span></span>
+						<span></span>
+						<h2>COLABORATION</h2>
+						<p>We love to colaborate with other companies and firms and create something beautiful for our customers together.</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="box">
+				<div class="img2">
+					<div class="overlay"></div>
+					<div class="overlay2"></div>
+					<div class="text">
+						<span></span>
+						<span></span>
+						<span></span>
+						<span></span>
+						<h2>FAMILY ORIENTED</h2>
+						<p>Our cafe provides a safe and healthy atmosphere for families of all sizes.</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="box">
+				<div class="img3">
+					<div class="overlay"></div>
+					<div class="overlay2"></div>
+					<div class="text">
+						<span></span>
+						<span></span>
+						<span></span>
+						<span></span>
+						<h2>HOME DELIVERY</h2>
+						<p>We also provide free delivery to your homes, we want to achieve making our customers happy even outside our cafe</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="custom-shape-divider-top-1639910579">
+			<svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+				<path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+			</svg>
+		</div>
+	</div>
+
+		
+	
+
+<!-- MENU -->
+	<div style="position: relative; background-color: rgb(255, 235, 242); min-height: 85vh;" class="menu">
+		<p><br></p>
+		<a name="menu"><h2 class="menu">MENU</h2></a>
+
+		<img src="images/menu1.2.png" class="menu1">
+		<img src="images/menu2.1.png" class="menu2">
+
+		<div class="custom-shape-divider-top-1638037189">
+		    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+		        <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+		    </svg>
+		</div>
+		
+	</div>
+
+<!-- OUR LOCATION MODAL -->
+<div id="id02" class="modal">
+	<form class="modal-content2 animate" action="/action_page.php" method="post">
+		<div style="text-align: center;
+		margin: 24px 0 12px 0;
+		position: relative;"><span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span></div>
+		<div class="container2">
+			<center><iframe style="margin-top: 4%; border: none; border-radius: 15px;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2901.9007982293206!2d17.812530315379767!3d43.33726487913337!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x134b4306e9d306d9%3A0x1de3c5ccecd2df50!2sCaffe%20Lasta!5e0!3m2!1shr!2sba!4v1640605393260!5m2!1shr!2sba" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe></center>
+		</div>
+		
+	</form>
+</div>
+
+<!-- CONTACT US MODAL -->
+<div id="id01" class="modal">
+  
+	<form class="modal-content animate" action="send.php" method="post">
+	  <div class="imgcontainer">
+		<span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+		<img src="images/ice-cream.png" alt="Avatar" class="avatar">
+	  </div>
+  
+	  <div class="container1">
+		<center><input type="text" placeholder="First and last name" name="name" required></center>
+
+		<center><textarea type="text" placeholder="Message..." name="message" required></textarea></center>
+
+		<center><button type="submit">SEND</button></center>
+	  </div>
+	</form>
+  </div>
+
+<!-- CONTACT INFORMATION -->
+	<div style="position: relative; background-color: rgb(101, 63, 77); min-height: 21vh;" class="contact">
+
+		<div class="contactInfo">
+			<div class="workHours">
+				<center><h3 class="workHours">WORK HOURS</h3></center>
+
+				<div class="work">
+					<p><i class="far fa-clock"></i> every day 8:00 - 23:00</p>
+				</div>
+			</div>
+
+			<div class="verticalLine"></div>
+
+			<div class="contInfo">
+				<a name="contact"><center><h3 class="contInfo">CONTACT INFORMATION</h3></center></a>
+				
+				<div class="igTel">
+					<p>&#9742 +38762114581</p>
+					<a href="https://www.instagram.com/caffelasta/?hl=hr" class="insta"><i class="fab fa-instagram"></i> @caffelasta</a>
+				</div>
+				
+			</div>
+
+			<div class="verticalLine"></div>
+
+
+			<div class="location">
+				<center><h3 class="location">LOCATION</h3></center>
+
+				<div class="loc">
+					<p><i class="fas fa-map-marker"></i> old bridge, onescukova br. 3</p>
+				</div>
+			</div>
+		</div>
+
+
+		<div class="custom-shape-divider-top-1638060068">
+		    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+		        <path d="M602.45,3.86h0S572.9,116.24,281.94,120H923C632,116.24,602.45,3.86,602.45,3.86Z" class="shape-fill"></path>
+		    </svg>
+		</div>
+
+	</div>
+<!-- SCROLL TO TOP BUTTON -->
+<button style="background-color: rgb(104, 38, 58); color: white;" id="buttonScrollToTop" class="buttonScrollToTop">
+    <i class="material-icons">arrow_upward</i>
+</button> 
+
+<script src="index.js"></script>
+</body>
+</html>
